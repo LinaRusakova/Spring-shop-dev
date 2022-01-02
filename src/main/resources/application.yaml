@@ -2,6 +2,6 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/spring-shop
     username: postgres
-    password: postgres
+    password: password
   liquibase:
-    enabled: false
+    change-log: classpath:/db/changelog-master.xml
